@@ -1,0 +1,42 @@
+<!DOCTYPE html >
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <link rel="stylesheet" href="../Static/styles.css">
+        <title>Settings</title>
+        <script src="../Scripts/settings.js"></script>
+    </head>
+    <header>
+        <div class="header">Change Keys</div>
+    </header>   
+    <body class="background" onload="initialize()">
+        <div class="menu-container">
+            <ul style="list-style: none;">
+                <li><a href="../index.html" class="button button3">Back to Menu</a></li>
+            </ul>
+
+
+
+            <div style="text-align: center; margin-top: 5%; margin-bottom: 10%; font-size: 32px; font-weight: bolder; color: white; flex-direction: wrap;"> 
+                <div class="input-row"  >
+                    <label class="input-label" for="up" style="margin-right: 13%" > UP: </label>
+                    <input class="input-button" onclick="changeKeys(document.getElementById('up').name)" type="button" value="" name="up" id="up"  style="width: 10%;">    
+                </div>
+                <div class="input-row" >
+                    <label class="input-label" for="left" > ROTATE LEFT: </label>
+                    <input class="input-button" onclick="changeKeys(document.getElementById('left').name)" type="button" value="" name="left" id="left"  style="width: 10%;">    
+                </div>
+                <div class="input-row" >
+                    <label class="input-label" for="right" style="margin-right: 3%;"> ROTATE RIGHT: </label>
+                    <input class="input-button" onclick="changeKeys(document.getElementById('right').name)" type="button" value="" name="right" id="right"  style="width: 10%;">    
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 5%; margin-bottom: 10%; font-size: 32px; font-weight: bolder; color: white; flex-direction: wrap;"> 
+                <h3 id="message" style="visibility: hidden;"> Press any key to Change Key Selection</h3>
+            </div>
+    </body>
+    <footer>
+        <div class="footer">Conner Nance - CS 5410</div>
+    </footer>
+</html>

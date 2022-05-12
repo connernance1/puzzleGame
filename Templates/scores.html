@@ -1,0 +1,41 @@
+<!DOCTYPE html >
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <link rel="stylesheet" href="../Static/styles.css">
+        <title>High Scores</title>
+        <script src="../Scripts/game.js"></script>
+    </head>
+    <header>
+        <div class="header">High Scores</div>
+    </header>   
+    <body class="background" onload="outputHighscore()">
+        <ul style="list-style: none;">
+            <li><a href="../index.html" class="button button3" style="margin-left: 37.5%;">Back to Menu</a></li>
+        </ul>
+
+
+        <div class="score-row">
+            <div class="score-column">
+                <div class="score-title">Score by Moves - Easy</div>
+                <div id="HS_E_S"></div>
+            </div>
+            <div class="score-column">
+                <div class="score-title">Score By Time - Easy</div>
+                <div id="HS_E_T"></div>
+            </div>
+            <div class="score-column">
+                <div class="score-title">Score By Moves - Hard</div>
+                <div id="HS_H_S"></div>
+            </div>
+            <div class="score-column">
+                <div class="score-title">Score By Time - Hard</div>
+                <div id="HS_H_T"></div>
+            </div>
+        
+        </div>
+    </body>
+    <footer>
+        <div class="footer">Conner Nance - CS 5410</div>
+    </footer>
+</html>
